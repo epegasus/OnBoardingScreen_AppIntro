@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">OnBoarding</string>
+
+    <!--OnBoarding-->
+    <string name="current_page">%1$d/3</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+
+    <!--WalkThrough-->
+    <string name="walk_through_title_1">Lorem Ipsum</string>
+    <string name="walk_through_title_2">Lorem Ipsum</string>
+    <string name="walk_through_title_3">Lorem Ipsum</string>
+
+    <string name="walk_through_body_1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="walk_through_body_2">Lorem Ipsum is simply dummy text.</string>
+    <string name="walk_through_body_3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+</resources>

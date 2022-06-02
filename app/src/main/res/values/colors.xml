@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_200">#FD6A77</color>
+    <color name="primary_500">#FD4354</color>
+    <color name="primary_700">#FD3042</color>
+    <color name="secondary_200">#636363</color>
+    <color name="secondary_700">#3C3C3C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#ECECEC</color>
+    <color name="blue">#1A87DD</color>
+
+    <color name="onboarding_color_1">@color/primary_500</color>
+    <color name="onboarding_color_2">#FF7A00</color>
+    <color name="onboarding_color_3">#C75CC4</color>
+
+</resources>

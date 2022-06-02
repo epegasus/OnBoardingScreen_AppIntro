@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="java.util.ArrayList"/>
+        <import type="com.kotlin.onboarding.helper.data_classes.WalkThrough"/>
+        <variable
+            name="position"
+            type="Integer" />
+        <variable
+            name="walkThroughList"
+            type="ArrayList&lt;WalkThrough&gt;" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        tools:context=".ui.fragments.intro.FragmentWalkThrough">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/siv_image_Walk_Through"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:imageId="@{walkThroughList[position].imageDrawable}"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title_Walk_Through"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CustomImageViewStyle"
+            tools:src="@drawable/dummy" />
+
+        <TextView
+            android:id="@+id/tv_title_Walk_Through"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="@{walkThroughList[position].title}"
+            android:textAlignment="center"
+            android:textAppearance="@style/CustomLargeTextAppearance"
+            android:textColor="@{walkThroughList[position].colorId}"
+            app:layout_constraintBottom_toTopOf="@+id/tv_body_Walk_Through"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Lorem Ipsum" />
+
+        <TextView
+            android:id="@+id/tv_body_Walk_Through"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:text="@{walkThroughList[position].body}"
+            android:textAppearance="@style/CustomMediumTextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_title_Walk_Through"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_Walk_Through"
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
