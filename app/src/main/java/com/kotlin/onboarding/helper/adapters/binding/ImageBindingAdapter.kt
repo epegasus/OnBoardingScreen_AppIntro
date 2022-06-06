@@ -6,5 +6,8 @@ import com.google.android.material.imageview.ShapeableImageView
 
 @BindingAdapter("imageId")
 fun ShapeableImageView.setImageFromDrawable(imageId: Int) {
-    Glide.with(this).load(imageId).into(this)
+    Glide
+        .with(this)
+        .load(imageId)
+        .into(this)
 }

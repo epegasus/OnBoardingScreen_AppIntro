@@ -4,11 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="java.util.ArrayList"/>
-        <import type="com.kotlin.onboarding.helper.data_classes.WalkThrough"/>
+
+        <import type="java.util.ArrayList" />
+
+        <import type="com.kotlin.onboarding.helper.data_classes.WalkThrough" />
+
         <variable
             name="position"
             type="Integer" />
+
         <variable
             name="walkThroughList"
             type="ArrayList&lt;WalkThrough&gt;" />
@@ -60,8 +64,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_12sdp"
-            android:textAlignment="center"
             android:text="@{walkThroughList[position].body}"
+            android:textAlignment="center"
             android:textAppearance="@style/CustomMediumTextAppearance"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/tv_title_Walk_Through"
